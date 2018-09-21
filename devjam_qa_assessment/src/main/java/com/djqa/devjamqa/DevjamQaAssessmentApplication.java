@@ -1,5 +1,6 @@
 package com.djqa.devjamqa;
 
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
@@ -12,6 +13,10 @@ import javafx.stage.Stage;
 @SpringBootApplication
 @EnableJpaRepositories
 public class DevjamQaAssessmentApplication extends Application {
+	
+	public static void main(String[] args) {
+ 		SpringApplication.run(DevjamQaAssessmentApplication.class, args);
+ 	}
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
