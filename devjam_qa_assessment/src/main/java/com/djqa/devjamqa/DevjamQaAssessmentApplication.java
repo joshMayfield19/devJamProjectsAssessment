@@ -8,8 +8,10 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
+@EnableJpaRepositories
 public class DevjamQaAssessmentApplication extends Application {
 
 	@Override
@@ -33,8 +35,5 @@ public class DevjamQaAssessmentApplication extends Application {
         //SecondController secondPaneController = (SecondController) secondPageLoader.getController();
         //secondPaneController.setFirstScene(firstScene);
 
-        primaryStage.setTitle("Switching scenes");
-        primaryStage.setScene(firstScene);
-        primaryStage.show();
-	}
+  }
 }
