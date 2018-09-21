@@ -50,9 +50,4 @@ public class LoginController {
     public void setSecondScene(Scene scene) {
         secondScene = scene;
     }
-
-    public void openSecondScene(ActionEvent actionEvent) {
-        Stage primaryStage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        primaryStage.setScene(secondScene);
-    }
 }

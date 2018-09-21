@@ -16,8 +16,6 @@
          <children>
             <ImageView fx:id="itemOnePic" fitHeight="70.0" fitWidth="80.0" layoutX="56.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true" />
             <ImageView fx:id="itemTwoPic" fitHeight="69.0" fitWidth="82.0" layoutX="209.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true" />
-            <Label fx:id="itemOneLabel" layoutX="56.0" layoutY="14.0" text="Label" />
-            <Label fx:id="itemTwoLabel" layoutX="222.0" layoutY="14.0" text="Label" />
             <Button fx:id="addItemOneButton" layoutX="14.0" layoutY="56.0" mnemonicParsing="false" onAction="#addItemOne" prefHeight="28.0" prefWidth="32.0" text="+" />
             <Button fx:id="addItemTwoButton" layoutX="173.0" layoutY="56.0" mnemonicParsing="false" onAction="#addItemTwo" prefHeight="28.0" prefWidth="32.0" text="+" />
             <Hyperlink fx:id="itemOneLink" layoutX="67.0" layoutY="109.0" onAction="#itemOneLink" text="Hyperlink" />
@@ -39,7 +37,11 @@
                   <Label layoutX="59.0" layoutY="2.0" text="Cart" />
                </children>
             </AnchorPane>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                            <TextArea fx:id="runningCart" prefHeight="500.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+          	</children>
+          </AnchorPane>
         </items>
       </SplitPane>
    </right>
