@@ -8,6 +8,5 @@ import com.djqa.devjamqa.entity.UserDao;
 @Repository
 public interface UserRepository extends CrudRepository<UserDao, Long>{
 
-	
 	UserDao findByUsername(String username);
 }

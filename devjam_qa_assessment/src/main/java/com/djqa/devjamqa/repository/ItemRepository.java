@@ -8,4 +8,7 @@ import com.djqa.devjamqa.entity.ItemDao;
 @Repository
 public interface ItemRepository extends CrudRepository<ItemDao, Long>{
 
+	ItemDao findById(Long id);
+	
+	
 }
