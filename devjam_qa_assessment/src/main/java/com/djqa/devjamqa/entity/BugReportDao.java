@@ -13,15 +13,11 @@ import lombok.Data;
 @Table
 @AllArgsConstructor
 @Data
-public class UserDao {
-
+public class BugReportDao {
 	@Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
-	private String name;
-	private String username;
-	private String password;
-	
-	
-	
+	private String bugDescription;
+	private String pageTitle;
+
 }

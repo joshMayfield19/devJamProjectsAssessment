@@ -13,15 +13,17 @@ import lombok.Data;
 @Table
 @AllArgsConstructor
 @Data
-public class UserDao {
-
+public class ItemDao {
+	
 	@Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
 	private String name;
-	private String username;
-	private String password;
-	
-	
-	
+	private Double cost;
+	private String desc;
+	private String imageName;
+	private Integer quantity;
+	private String options;
+
+
 }
